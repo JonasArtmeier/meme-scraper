@@ -7,7 +7,7 @@ request('https://memegen.link/examples', function (err, res, body) {
   $('.row a').each(function (i, el) {
     const url = 'https://memegen.link';
     const item = $(el).text();
-    const img = $(el).attr('href').replace(/[']/g, '').split('?')[0];
+    const img = $(el).attr('href').replace(/[]/g, '').split('?')[0];
     const link = url + img;
 
     if (i < 10) {
