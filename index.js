@@ -16,7 +16,7 @@ request('https://memegen.link/examples', function (err, res, body) {
         imgs: [
           {
             uri: link,
-            filename: '0' + i,
+            filename: `${i}`,
           },
         ],
         dest: './memes',
